@@ -567,6 +567,5 @@ playButton.addEventListener("click", () => {
         connection.invoke("JoinGame", newBallAngle, playerName.value).catch(e => console.error(e));
 
     }).catch(e => console.error(`Failed to start connection: ${e}`));
-
 });
 
