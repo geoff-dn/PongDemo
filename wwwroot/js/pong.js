@@ -554,11 +554,6 @@ connection.on("PlayerLeft", () => {
     Game.View.fillText(`${game.otherPlayerName} has left the game`, Game.vWidth / 2, Game.vHeight * 0.75);
 });
 
-//window.addEventListener('beforeunload', () => {
-//connection.invoke("LeaveGame");
-//    connection.stop();
-//});
-
 playButton.addEventListener("click", () => {
     waitingDiv.style.display = "inline";
     connection.start().then(function () {
